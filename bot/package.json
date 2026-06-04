@@ -1,0 +1,13 @@
+{
+  "name": "hingalka-bot",
+  "version": "1.0.0",
+  "description": "MAX Messenger chatbot for LadyBUGs Korean Dialect project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@maxhub/max-bot-api": "^1.0.4",
+    "dotenv": "^16.4.5"
+  }
+}
