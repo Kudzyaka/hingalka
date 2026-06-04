@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@maxhub/max-bot-api": "^1.0.4",
+    "@maxhub/max-bot-api": "latest",
     "dotenv": "^16.4.5"
   }
 }
