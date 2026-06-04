@@ -227,8 +227,8 @@ export default function App() {
               </div>
               <h1 style={{ fontSize: '3rem', lineHeight: '1.15', marginBottom: '20px' }}>
                 Хангылька: <br />
-                <span style={{ color: 'var(--accent-red)' }}>Южная</span> против <br />
-                <span style={{ color: 'var(--accent-blue)' }}>Северной</span> Кореи
+                <span style={{ color: 'var(--accent-red)' }}>Южная</span> vs <br />
+                <span style={{ color: 'var(--accent-blue)' }}>Северная</span> Корея
               </h1>
               <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)', marginBottom: '35px', maxWidth: '550px' }}>
                 Полноценный интерактивный гид по лексическим различиям корейского полуострова. Листайте карточки, слушайте озвучку и погружайтесь в историю языка!
