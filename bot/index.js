@@ -108,13 +108,16 @@ async function initBot() {
 }
 
 // Welcome message on starting the bot
-bot.command('start', async (ctx) => {
+async function sendWelcome(ctx) {
   const keyboard = getMainMenuKeyboard();
   await ctx.reply(
     'Привет! 🐞\n\nДобро пожаловать в проект команды LadyBUGs — "Хангылька" (интерактивный гид по лексическим различиям Южной и Северной Кореи).\n\nВы можете изучать карточки слов прямо здесь, выбрав одну из категорий ниже, или запустить красивую визуальную версию приложения!',
     { attachments: [keyboard] }
   );
-});
+}
+
+bot.command('start', sendWelcome);
+bot.on('bot_started', sendWelcome);
 
 // Category button handler
 bot.action(/cat:(.+)/, async (ctx) => {
