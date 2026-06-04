@@ -32,11 +32,7 @@ function getMainMenuKeyboard() {
       Keyboard.button.callback('Заимствования 🧴', 'cat:docx')
     ],
     [
-      {
-        type: 'openApp',
-        text: '📱 Открыть Mini App',
-        webApp: botUsername
-      }
+      Keyboard.button.link('📱 Открыть Mini App', `https://max.ru/${botUsername}?startapp`)
     ]
   ]);
 }
@@ -92,11 +88,7 @@ function getCardResponse(userId, category, index) {
   const keyboard = Keyboard.inlineKeyboard([
     row,
     [
-      {
-        type: 'openApp',
-        text: '📱 Запустить приложение',
-        webApp: botUsername
-      }
+      Keyboard.button.link('📱 Запустить приложение', `https://max.ru/${botUsername}?startapp`)
     ]
   ]);
 
